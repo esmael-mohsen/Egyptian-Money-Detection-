@@ -1,0 +1,8 @@
+opencv-python
+ultralytics
+numpy
+SpeechRecognition
+PyAudio
+vosk
+edge-tts
+playsound==1.2.2

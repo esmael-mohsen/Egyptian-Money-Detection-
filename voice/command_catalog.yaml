@@ -1,0 +1,863 @@
+{
+  "commands": {
+    "START_SCAN": {
+      "requires_amount": false,
+      "confirmation_required": false,
+      "aliases_en": [
+        "start scan",
+        "scan",
+        "scan money",
+        "scan the money",
+        "start detection",
+        "start detecting",
+        "begin detection",
+        "begin counting",
+        "start counting",
+        "count notes",
+        "count the notes",
+        "count money",
+        "count the money",
+        "detect money",
+        "read notes",
+        "read the notes",
+        "read the bills",
+        "check the money",
+        "check these notes",
+        "look at the money",
+        "money scan",
+        "open scanner",
+        "turn on scanning",
+        "enable scanning",
+        "start camera scan",
+        "start note scan",
+        "begin note reading"
+      ],
+      "aliases_ar": [
+        "ابدأ المسح",
+        "ابدأ العد",
+        "ابدأ الكشف",
+        "ابدأ كشف الفلوس",
+        "شغل المسح",
+        "شغل الكشف",
+        "شغل عد الفلوس",
+        "عد الفلوس",
+        "عد العملات",
+        "احسب الفلوس",
+        "اكشف الفلوس",
+        "اقرأ العملات",
+        "اقرأ الفلوس",
+        "اقرأ الورق",
+        "ابدأ قراءة الفلوس",
+        "افتح الماسح",
+        "شغل الكاميرا",
+        "ابدأ سكان",
+        "سكان الفلوس"
+      ],
+      "misrecognitions": [
+        "start skin",
+        "start sca",
+        "scan many",
+        "scan the many",
+        "count nodes",
+        "read nots",
+        "money skan",
+        "detect many"
+      ]
+    },
+    "STOP_SCAN": {
+      "requires_amount": false,
+      "confirmation_required": false,
+      "aliases_en": [
+        "stop scan",
+        "stop scanning",
+        "stop",
+        "stop detection",
+        "pause scan",
+        "pause scanning",
+        "end scan",
+        "end scanning",
+        "turn off scanning",
+        "disable scanning",
+        "stop reading",
+        "stop counting",
+        "close scanner"
+      ],
+      "aliases_ar": [
+        "وقف",
+        "وقف المسح",
+        "وقف الكشف",
+        "وقف العد",
+        "وقف قراءة الفلوس",
+        "اقفل المسح",
+        "اقفل الكشف",
+        "اقفل الماسح",
+        "انهاء المسح",
+        "انهي المسح",
+        "خلاص وقف",
+        "استنى"
+      ],
+      "misrecognitions": [
+        "top scan",
+        "stop skin",
+        "stock scan",
+        "and scan",
+        "pause skin"
+      ]
+    },
+    "COUNT_TOTAL": {
+      "requires_amount": false,
+      "confirmation_required": false,
+      "aliases_en": [
+        "total",
+        "session total",
+        "count total",
+        "tell me total",
+        "tell me the total",
+        "how much",
+        "how much do i have",
+        "how much is this",
+        "what is the total",
+        "what is my total",
+        "money total",
+        "current total",
+        "read total",
+        "say total",
+        "sum",
+        "sum it",
+        "add it up",
+        "calculate total",
+        "calculate the money"
+      ],
+      "aliases_ar": [
+        "المجموع",
+        "الإجمالي",
+        "الاجمالي",
+        "كام المجموع",
+        "كام الإجمالي",
+        "قولي المجموع",
+        "قول المجموع",
+        "معايا كام",
+        "المبلغ كام",
+        "احسب المجموع",
+        "احسب الاجمالي",
+        "اجمع الفلوس",
+        "اجمع الورق",
+        "قوللي كام",
+        "الفاتورة كام",
+        "وصلنا لكام"
+      ],
+      "misrecognitions": [
+        "totals",
+        "how match",
+        "how much do have",
+        "money turtle",
+        "session turtle",
+        "some it"
+      ]
+    },
+    "LAST_DETECTION": {
+      "requires_amount": false,
+      "confirmation_required": false,
+      "aliases_en": [
+        "last note",
+        "last detection",
+        "last bill",
+        "last money",
+        "last one",
+        "what was the last note",
+        "what did you read",
+        "what was that",
+        "repeat last note",
+        "last value",
+        "latest note"
+      ],
+      "aliases_ar": [
+        "اخر ورقة",
+        "آخر ورقة",
+        "اخر كشف",
+        "آخر كشف",
+        "اخر عملة",
+        "آخر عملة",
+        "اخر واحدة",
+        "آخر واحدة",
+        "قرأت ايه",
+        "كانت كام",
+        "قول اخر ورقة",
+        "كرر اخر ورقة"
+      ],
+      "misrecognitions": [
+        "last node",
+        "last not",
+        "less note",
+        "latest node"
+      ]
+    },
+    "REPEAT": {
+      "requires_amount": false,
+      "confirmation_required": false,
+      "aliases_en": [
+        "repeat",
+        "say again",
+        "again",
+        "repeat that",
+        "say it again",
+        "one more time",
+        "what did you say",
+        "can you repeat",
+        "repeat please"
+      ],
+      "aliases_ar": [
+        "كرر",
+        "عيد",
+        "قول تاني",
+        "كرر تاني",
+        "عيد تاني",
+        "قولها تاني",
+        "ما سمعتش",
+        "اعد الكلام",
+        "كرر الكلام"
+      ],
+      "misrecognitions": [
+        "repete",
+        "repeet",
+        "say a gain"
+      ]
+    },
+    "RESET_SESSION": {
+      "requires_amount": false,
+      "confirmation_required": true,
+      "aliases_en": [
+        "reset session",
+        "reset counter",
+        "clear session",
+        "clear count",
+        "clear total",
+        "reset total",
+        "start over",
+        "new session",
+        "forget this count",
+        "delete session count",
+        "zero the counter"
+      ],
+      "aliases_ar": [
+        "صفر العداد",
+        "صفر الجلسة",
+        "صفر المجموع",
+        "امسح العد",
+        "امسح المجموع",
+        "ابدأ من جديد",
+        "جلسة جديدة",
+        "انسى العد",
+        "امسح الحساب",
+        "رجع العداد صفر"
+      ],
+      "misrecognitions": [
+        "recent session",
+        "research session",
+        "reset section",
+        "clear account"
+      ]
+    },
+    "STATUS_CHECK": {
+      "requires_amount": false,
+      "confirmation_required": false,
+      "aliases_en": [
+        "status",
+        "system status",
+        "are you running",
+        "are you working",
+        "what mode",
+        "current mode",
+        "what are you doing",
+        "where are we",
+        "tell me status",
+        "check status"
+      ],
+      "aliases_ar": [
+        "الحالة",
+        "حالة النظام",
+        "انت شغال",
+        "إنت شغال",
+        "النظام شغال",
+        "الوضع الحالي",
+        "احنا فين",
+        "انت بتعمل ايه",
+        "قول الحالة",
+        "ايه الوضع"
+      ],
+      "misrecognitions": [
+        "statues",
+        "system statues",
+        "what mood"
+      ]
+    },
+    "WALLET_BALANCE": {
+      "requires_amount": false,
+      "confirmation_required": false,
+      "aliases_en": [
+        "wallet balance",
+        "balance",
+        "my balance",
+        "current balance",
+        "how much in wallet",
+        "how much is in my wallet",
+        "tell me my balance",
+        "tell me wallet balance",
+        "check wallet",
+        "check balance",
+        "what is my balance",
+        "wallet amount",
+        "money in wallet"
+      ],
+      "aliases_ar": [
+        "رصيد المحفظة",
+        "الرصيد",
+        "رصيدي",
+        "رصيدي كام",
+        "في المحفظة كام",
+        "المحفظة فيها كام",
+        "قول الرصيد",
+        "قولي الرصيد",
+        "افحص الرصيد",
+        "راجع المحفظة",
+        "معايا كام في المحفظة"
+      ],
+      "misrecognitions": [
+        "valid balance",
+        "ballot balance",
+        "wallet valence",
+        "my valance"
+      ]
+    },
+    "SET_BALANCE": {
+      "requires_amount": true,
+      "confirmation_required": true,
+      "aliases_en": [
+        "set balance",
+        "set wallet",
+        "set my balance",
+        "set balance to",
+        "set wallet to",
+        "my balance is",
+        "wallet is",
+        "make balance",
+        "change balance to",
+        "update balance to",
+        "start balance",
+        "initial balance"
+      ],
+      "aliases_ar": [
+        "حدد الرصيد",
+        "اضبط الرصيد",
+        "ظبط الرصيد",
+        "خلي الرصيد",
+        "الرصيد يبقى",
+        "رصيدي بقى",
+        "المحفظة فيها",
+        "غير الرصيد",
+        "حدث الرصيد",
+        "الرصيد الجديد",
+        "ابدأ برصيد"
+      ],
+      "misrecognitions": [
+        "sat balance",
+        "said balance",
+        "set valance",
+        "my valance is"
+      ]
+    },
+    "START_DEPOSIT": {
+      "requires_amount": false,
+      "confirmation_required": false,
+      "aliases_en": [
+        "start deposit",
+        "deposit",
+        "deposit money",
+        "add money",
+        "add this to wallet",
+        "put money in wallet",
+        "put this in wallet",
+        "save this money",
+        "save to wallet",
+        "wallet deposit",
+        "add to balance",
+        "increase balance",
+        "cash in"
+      ],
+      "aliases_ar": [
+        "ابدأ ايداع",
+        "إيداع",
+        "ايداع",
+        "ضيف للمحفظة",
+        "ضيف الرصيد",
+        "حط في المحفظة",
+        "زود الرصيد",
+        "زود المحفظة",
+        "سجل ايداع",
+        "احفظ الفلوس",
+        "دخل الفلوس",
+        "حط الفلوس دي"
+      ],
+      "misrecognitions": [
+        "the posit",
+        "deep posit",
+        "start the posit",
+        "wallet the posit",
+        "cash inn"
+      ]
+    },
+    "FINISH_DEPOSIT": {
+      "requires_amount": false,
+      "confirmation_required": true,
+      "aliases_en": [
+        "finish deposit",
+        "end deposit",
+        "done deposit",
+        "complete deposit",
+        "finish adding",
+        "done adding",
+        "deposit done",
+        "save deposit",
+        "close deposit"
+      ],
+      "aliases_ar": [
+        "انهاء الايداع",
+        "انهي الايداع",
+        "خلص الايداع",
+        "تم الايداع",
+        "كده الايداع خلص",
+        "اقفل الايداع",
+        "احفظ الايداع",
+        "خلصت ايداع"
+      ],
+      "misrecognitions": [
+        "finish the posit",
+        "done the posit",
+        "close the posit"
+      ]
+    },
+    "START_PAYMENT": {
+      "requires_amount": false,
+      "confirmation_required": false,
+      "aliases_en": [
+        "start payment",
+        "payment",
+        "pay",
+        "pay money",
+        "i paid",
+        "i will pay",
+        "i am paying",
+        "take from wallet",
+        "deduct from wallet",
+        "subtract from wallet",
+        "spend money",
+        "cash out",
+        "start paying",
+        "make payment",
+        "new payment"
+      ],
+      "aliases_ar": [
+        "ابدأ دفع",
+        "دفع",
+        "هدفع",
+        "انا هدفع",
+        "دفعت",
+        "خصم من المحفظة",
+        "اخصم من الرصيد",
+        "اطلع فلوس",
+        "سجل دفع",
+        "عملية دفع",
+        "ابدأ عملية دفع",
+        "خصم فلوس",
+        "هشتري"
+      ],
+      "misrecognitions": [
+        "start pavement",
+        "i payed",
+        "start pay mint",
+        "cash ow",
+        "the duct from wallet"
+      ]
+    },
+    "FINISH_PAYMENT": {
+      "requires_amount": false,
+      "confirmation_required": true,
+      "aliases_en": [
+        "finish payment",
+        "end payment",
+        "done payment",
+        "complete payment",
+        "payment done",
+        "finish paying",
+        "done paying",
+        "close payment",
+        "calculate payment",
+        "review payment"
+      ],
+      "aliases_ar": [
+        "انهاء الدفع",
+        "انهي الدفع",
+        "خلص الدفع",
+        "تم الدفع",
+        "كده الدفع خلص",
+        "اقفل الدفع",
+        "احسب الدفع",
+        "راجع الدفع",
+        "خلصت دفع"
+      ],
+      "misrecognitions": [
+        "finish pavement",
+        "done pavement",
+        "close pavement"
+      ]
+    },
+    "START_FLIP_SCAN": {
+      "requires_amount": false,
+      "confirmation_required": false,
+      "aliases_en": [
+        "start flip count",
+        "flip count",
+        "start flip scan",
+        "flip scan",
+        "count stack",
+        "count the stack",
+        "count bundle",
+        "count the bundle",
+        "stack count",
+        "bundle count",
+        "count notes from stack",
+        "count money from stack",
+        "natural count",
+        "manual count",
+        "count by hand",
+        "start stack counting",
+        "start bundle counting"
+      ],
+      "aliases_ar": [
+        "عد الرزمة",
+        "ابدأ عد الرزمة",
+        "عد الورق بالطريقة العادية",
+        "عد الرزم",
+        "ابدأ عد الورق",
+        "عد الفلوس من الرزمة",
+        "عد فلوس من ايدي",
+        "عد ورقة ورقة",
+        "شغل عد الرزمة",
+        "ابدأ العد اليدوي"
+      ],
+      "misrecognitions": [
+        "count stuck",
+        "count stock",
+        "flip account",
+        "stack account",
+        "bundle account",
+        "start flip accountant"
+      ]
+    },
+    "START_FLIP_DEPOSIT": {
+      "requires_amount": false,
+      "confirmation_required": false,
+      "aliases_en": [
+        "start flip deposit",
+        "flip deposit",
+        "deposit stack",
+        "deposit the stack",
+        "deposit bundle",
+        "deposit the bundle",
+        "add stack to wallet",
+        "add bundle to wallet",
+        "save stack to wallet",
+        "wallet stack deposit",
+        "count stack as deposit",
+        "deposit by hand"
+      ],
+      "aliases_ar": [
+        "ايداع رزمة",
+        "ابدأ ايداع رزمة",
+        "ضيف الرزمة للمحفظة",
+        "ايداع الورق من الرزمة",
+        "ايداع فلوس من ايدي",
+        "حط الرزمة في المحفظة",
+        "سجل ايداع رزمة"
+      ],
+      "misrecognitions": [
+        "flip the posit",
+        "stack the posit",
+        "deposit stuck",
+        "the posit stack",
+        "wallet stack the posit"
+      ]
+    },
+    "FINISH_FLIP_DEPOSIT": {
+      "requires_amount": false,
+      "confirmation_required": true,
+      "aliases_en": [
+        "finish flip deposit",
+        "end flip deposit",
+        "done flip deposit",
+        "complete flip deposit",
+        "finish stack deposit",
+        "done stack deposit",
+        "save stack deposit",
+        "close stack deposit",
+        "deposit stack done"
+      ],
+      "aliases_ar": [
+        "انهاء ايداع الرزمة",
+        "انهي ايداع الرزمة",
+        "خلص ايداع الرزمة",
+        "تم ايداع الرزمة",
+        "احفظ ايداع الرزمة",
+        "اقفل ايداع الرزمة"
+      ],
+      "misrecognitions": [
+        "finish flip the posit",
+        "done flip the posit",
+        "finish stock deposit",
+        "done stuck deposit"
+      ]
+    },
+    "START_FLIP_PAYMENT": {
+      "requires_amount": false,
+      "confirmation_required": false,
+      "aliases_en": [
+        "start flip payment",
+        "flip payment",
+        "pay from stack",
+        "pay from the stack",
+        "pay from bundle",
+        "payment stack",
+        "stack payment",
+        "count stack as payment",
+        "deduct stack from wallet",
+        "take stack from wallet",
+        "spend stack",
+        "pay by hand"
+      ],
+      "aliases_ar": [
+        "دفع رزمة",
+        "ابدأ دفع رزمة",
+        "ادفع من الرزمة",
+        "اخصم الرزمة من المحفظة",
+        "سجل دفع رزمة",
+        "دفع فلوس من ايدي",
+        "عد الرزمة للدفع"
+      ],
+      "misrecognitions": [
+        "flip pavement",
+        "stack pavement",
+        "pay from stuck",
+        "payment stuck",
+        "start flip pavement"
+      ]
+    },
+    "FINISH_FLIP_PAYMENT": {
+      "requires_amount": false,
+      "confirmation_required": true,
+      "aliases_en": [
+        "finish flip payment",
+        "end flip payment",
+        "done flip payment",
+        "complete flip payment",
+        "finish stack payment",
+        "done stack payment",
+        "review stack payment",
+        "close stack payment",
+        "payment stack done"
+      ],
+      "aliases_ar": [
+        "انهاء دفع الرزمة",
+        "انهي دفع الرزمة",
+        "خلص دفع الرزمة",
+        "تم دفع الرزمة",
+        "راجع دفع الرزمة",
+        "اقفل دفع الرزمة"
+      ],
+      "misrecognitions": [
+        "finish flip pavement",
+        "done flip pavement",
+        "finish stock payment",
+        "done stuck payment"
+      ]
+    },
+    "CONFIRM": {
+      "requires_amount": false,
+      "confirmation_required": false,
+      "aliases_en": [
+        "confirm",
+        "yes",
+        "ok",
+        "okay",
+        "do it",
+        "approved",
+        "approve",
+        "accept",
+        "save",
+        "save it",
+        "go ahead",
+        "correct",
+        "that's right",
+        "sure",
+        "continue",
+        "proceed"
+      ],
+      "aliases_ar": [
+        "نعم",
+        "ايوه",
+        "أيوه",
+        "اه",
+        "آه",
+        "أكد",
+        "تأكيد",
+        "تمام",
+        "موافق",
+        "صح",
+        "كمل",
+        "نفذ",
+        "احفظ",
+        "اعتمد",
+        "ماشي"
+      ],
+      "misrecognitions": [
+        "can firm",
+        "con firm",
+        "approved",
+        "go head",
+        "that's write"
+      ]
+    },
+    "CANCEL": {
+      "requires_amount": false,
+      "confirmation_required": false,
+      "aliases_en": [
+        "cancel",
+        "no",
+        "stop transaction",
+        "never mind",
+        "discard",
+        "discard it",
+        "do not save",
+        "don't save",
+        "wrong",
+        "undo",
+        "abort",
+        "cancel that",
+        "ignore it",
+        "forget it"
+      ],
+      "aliases_ar": [
+        "الغاء",
+        "إلغاء",
+        "لا",
+        "لأ",
+        "وقف العملية",
+        "بلاش",
+        "مش موافق",
+        "الغيه",
+        "امسح العملية",
+        "ما تحفظش",
+        "متنفذش",
+        "ارجع",
+        "مش صح",
+        "سيبك"
+      ],
+      "misrecognitions": [
+        "cancer",
+        "council",
+        "cancelled",
+        "can sell",
+        "never mine"
+      ]
+    },
+    "SWITCH_ARABIC": {
+      "requires_amount": false,
+      "confirmation_required": false,
+      "aliases_en": [
+        "switch to arabic",
+        "arabic",
+        "speak arabic",
+        "use arabic",
+        "arabic language",
+        "change to arabic",
+        "talk arabic"
+      ],
+      "aliases_ar": [
+        "عربي",
+        "اتكلم عربي",
+        "حول عربي",
+        "شغل العربي",
+        "خليك عربي",
+        "اللغة العربية",
+        "غير للعربي"
+      ],
+      "misrecognitions": [
+        "arab ish",
+        "a rabic",
+        "speak a rabic"
+      ]
+    },
+    "SWITCH_ENGLISH": {
+      "requires_amount": false,
+      "confirmation_required": false,
+      "aliases_en": [
+        "switch to english",
+        "english",
+        "speak english",
+        "use english",
+        "english language",
+        "change to english",
+        "talk english"
+      ],
+      "aliases_ar": [
+        "انجليزي",
+        "إنجليزي",
+        "اتكلم انجليزي",
+        "حول انجليزي",
+        "شغل الانجليزي",
+        "خليك انجليزي",
+        "اللغة الإنجليزية",
+        "غير للانجليزي"
+      ],
+      "misrecognitions": [
+        "in glitch",
+        "englishh",
+        "speak in glitch"
+      ]
+    },
+    "EXIT_APP": {
+      "requires_amount": false,
+      "confirmation_required": false,
+      "aliases_en": [
+        "exit",
+        "close",
+        "quit",
+        "close app",
+        "shutdown",
+        "shut down",
+        "close program",
+        "stop program",
+        "end program",
+        "finish app",
+        "goodbye"
+      ],
+      "aliases_ar": [
+        "خروج",
+        "اقفل",
+        "اغلاق",
+        "اقفل البرنامج",
+        "اقفل التطبيق",
+        "اخرج",
+        "انهي البرنامج",
+        "خلاص اقفل",
+        "سلام"
+      ],
+      "misrecognitions": [
+        "exists",
+        "clothes",
+        "shut town",
+        "close up",
+        "good buy"
+      ]
+    }
+  }
+}
