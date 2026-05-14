@@ -202,9 +202,16 @@ sudo apt-get update
 sudo apt-get install -y portaudio19-dev python3-pyaudio
 ```
 
-## Required Local Models
+## Model Files
 
-Large model files are not committed to GitHub. Create the following paths locally:
+The YOLO model file `models/best.pt` is stored with Git LFS. Install Git LFS before cloning or pulling the repository:
+
+```bash
+git lfs install
+git lfs pull
+```
+
+Expected model paths:
 
 ```text
 models/best.pt
@@ -212,11 +219,11 @@ models/vosk-en/
 models/vosk-ar/
 ```
 
-Minimum required:
+Minimum runtime requirements:
 
-- `models/best.pt` for YOLO banknote detection
-- `models/vosk-en/` for offline English STT fallback
-- `models/vosk-ar/` for optional offline Arabic STT fallback
+- `models/best.pt` is included through Git LFS.
+- `models/vosk-en/` should be downloaded locally for offline English STT fallback.
+- `models/vosk-ar/` should be downloaded locally for optional offline Arabic STT fallback.
 
 ## Run
 

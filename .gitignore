@@ -22,9 +22,11 @@ data/
 *.sqlite
 *.sqlite3
 
-# Large local model files
-models/
-*.pt
+# Model artifacts
+# The repository tracks only models/best.pt with Git LFS.
+models/*
+!models/
+!models/best.pt
 *.onnx
 *.engine
 *.tflite
